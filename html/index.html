@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/index.css">
     <title>AgendaFacil</title>
 </head>
+
 <body>
     <div id="main">
         <div id="calendario">
             <h2>Calendário</h2>
-            <div id="mes_calendario">
-            </div>
+            <section id="mes_calendario">
+            </section>
             <button id="voltar">Voltar</button>
             <button id="proximo">Próximo</button>
 
@@ -22,11 +24,36 @@
                 <div>Qua</div>
                 <div>Qui</div>
                 <div>Sex</div>
-                <div>Sáb</div>                
+                <div>Sáb</div>
             </section>
             <section id="dias">
-            </section>            
+            </section>
+        </div>
+        <div id="atividades-dia">
+
+            <section id="cabecalho-atividades">
+
+                <h2 id="titulo-dia">ATIVIDADES DO DIA</h2>
+
+                <div id="barra-superior">
+
+                    <div id="data-atual">
+                        <span id="icone-data">📅</span>
+                        <span id="texto-data"></span>
+                    </div>
+
+                    <button id="btnNovaAtividade">+ Nova Atividade</button>
+
+                </div>
+
+            </section>
+
+            <div id="listaAtividades">
+
+            </div>
+
         </div>
     </div>
 </body>
+
 </html>
