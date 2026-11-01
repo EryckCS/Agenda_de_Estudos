@@ -1,7 +1,27 @@
-#main{
-    background-color: rgb(60, 60, 65);
+/*Tela de login*/
+body{
+    background-color: rgb(255, 255, 255);
 }
 
-#calendario{
-    background-color: blanchedalmond;
+#main{
+    background-color: #1B1F2A;
+    text-align: center;
+    margin: 240px;
 }
+
+#email, #senha{
+    color: #f3f2f2;
+
+}
+
+#caixa-login{
+    text-align: center;
+}
+
+
+
+#caixa-cadastro{
+    display: none;
+
+}
+
