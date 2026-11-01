@@ -1,23 +1,23 @@
 /*Tela de login*/
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: #0f172a;
 }
 
 #main{
     background-color: #1B1F2A;
+    margin: 300px auto;
+    border-radius: 20px;
+    width: 500px;
     text-align: center;
-    margin: 240px;
 }
 
-#email, #senha{
-    color: #f3f2f2;
-
+#email, #pass{
+    margin-right: 30px;
 }
 
 #caixa-login{
     text-align: center;
 }
-
 
 
 #caixa-cadastro{
