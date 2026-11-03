@@ -1,26 +1,56 @@
+body{
+    background-color: #0f172a;
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 250px;      
-  height: 100vh;      
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;      
+    height: 100vh;   
 }
 
 #main {
-  min-height: 100vh;
-  margin-left: 250px; 
-  padding: 20px;      
-  display: grid;
-  grid-template-columns: 1fr 1fr;               
+    padding: 30px;
+    margin-top: -199px;
+    margin-left: 250px;  
+    display: grid;
+    grid-template-columns: 1fr 1fr;               
 }
 
 #calendario, #atividades-dia{
-  height: 250px;        
-  border: 2px solid blue; 
+    height: 500px;        
+    border-style: dotted;
+    border-width: 2px;
+    text-align: center;
 }
 
 #pomodoro {
-  grid-column: span 2;  
-  height: 300px;          
-  border: 2px solid green;
+    grid-column: span 2;  
+    height: 300px;          
+    border-style: dotted;
+    border-width: 2px;
 }
+
+#usuario{
+    color: antiquewhite;
+}
+
+#dias_semana{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); 
+  text-align: center;                
+  width: 100%;                      
+  max-width: 400px;
+  padding: 10%;
+  margin-left: 15%;
+
+}
+
+#voltar, #proximo{
+    background-color: #5c606b;
+    color: aliceblue;
+}
+
