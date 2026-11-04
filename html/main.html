@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>AgendaFacil</title>
 </head>
 
@@ -24,7 +24,7 @@
             <section id="mes_calendario">
             </section>
             <button id="voltar">🢀</button>
-            
+
             <button id="proximo">🢂</button>
 
             <section id="dias_semana">
@@ -52,15 +52,44 @@
                         <span id="texto-data"></span>
                     </div>
 
-                    <button id="btnNovaAtividade">+ Nova Atividade</button>
+                    <button id="btnNovaAtividade" type="button">+ Nova Atividade</button>
+
 
                 </div>
 
             </section>
 
-            <div id="listaAtividades">
+            <form id="formAtividade" hidden>
+                <div class="campos-atividade">
+                    <div class="campo">
+                        <label for="tituloAtividade">Título da atividade</label>
+                        <input id="tituloAtividade" type="text" required>
+                    </div>
 
-            </div>
+                    <div class="campo">
+                        <label for="descricaoAtividade">O que precisa fazer?</label>
+                        <textarea id="descricaoAtividade" required></textarea>
+                    </div>
+
+                    <div class="campo">
+                        <label for="dataAtividade">Data</label>
+                        <input id="dataAtividade" type="date" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="horaAtividade">Hora</label>
+                        <input id="horaAtividade" type="time" required>
+                    </div>
+                </div>
+
+                <div class="botoes-formulario">
+                    <button type="submit">Salvar atividade</button>
+                    <button id="btnCancelarAtividade" type="button">Cancelar</button>
+                </div>
+            </form>
+
+
+            <div id="listaAtividades"></div>
 
         </div>
         <div id="pomodoro">
@@ -72,7 +101,7 @@
 
                 <span id="tempo">25:00</span>
                 <div id="botoes">
-                    <button  id="btnIniciar">Iniciar</button>
+                    <button id="btnIniciar">Iniciar</button>
                     <button id="btnPausar">Pausar</button>
                     <button id="btnResetar">Resetar</button>
                 </div>
@@ -96,7 +125,7 @@
         </div>
     </div>
 
-
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
