@@ -1,3 +1,4 @@
+//=====================ATIVIDADES DO DIA JAVASCRIPT==========================================
 const botaoNovaAtividade = document.querySelector("#btnNovaAtividade");
 const formularioAtividade = document.querySelector("#formAtividade");
 const botaoCancelar = document.querySelector("#btnCancelarAtividade");
@@ -48,3 +49,4 @@ formularioAtividade.addEventListener("submit", function (evento) {
     formularioAtividade.reset();
     formularioAtividade.hidden = true;
 });
+//======================================================================================

@@ -5,26 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
-    <title>AgendaFacil</title>
+    <title>AgendaEstudos</title>
 </head>
 
 <body>
+
     <div id="nav">
+
         <img src="../img/agenda_de_estudos.png" alt="logo" width="300" height="100">
+
         <section id="usuario">
             <h3 id="nomeUsuario">Eryck Kayck</h3>
             <p id="emailUsuario">eryck@gmail.com</p>
             <button id="btnSair">Sair</button>
         </section>
+
     </div>
 
     <div id="main">
+
         <div id="calendario">
             <h2>Calendário</h2>
-            <section id="mes_calendario">
-            </section>
-            <button id="voltar">🢀</button>
 
+            <section id="mes_calendario"></section>
+
+            <button id="voltar">🢀</button>
             <button id="proximo">🢂</button>
 
             <section id="dias_semana">
@@ -36,9 +41,10 @@
                 <div>Sex</div>
                 <div>Sáb</div>
             </section>
-            <section id="dias">
-            </section>
+
+            <section id="dias"></section>
         </div>
+
         <div id="atividades-dia">
 
             <section id="cabecalho-atividades">
@@ -53,14 +59,14 @@
                     </div>
 
                     <button id="btnNovaAtividade" type="button">+ Nova Atividade</button>
-
-
                 </div>
 
             </section>
 
             <form id="formAtividade" hidden>
+
                 <div class="campos-atividade">
+
                     <div class="campo">
                         <label for="tituloAtividade">Título da atividade</label>
                         <input id="tituloAtividade" type="text" required>
@@ -80,36 +86,37 @@
                         <label for="horaAtividade">Hora</label>
                         <input id="horaAtividade" type="time" required>
                     </div>
+
                 </div>
 
                 <div class="botoes-formulario">
                     <button type="submit">Salvar atividade</button>
                     <button id="btnCancelarAtividade" type="button">Cancelar</button>
                 </div>
-            </form>
 
+            </form>
 
             <div id="listaAtividades"></div>
 
         </div>
+
         <div id="pomodoro">
 
-
-
             <div id="cronometro">
-                <h2>CRONÔMETRO POMODORO</h2>
 
+                <h2>CRONÔMETRO POMODORO</h2>
                 <span id="tempo">25:00</span>
+
                 <div id="botoes">
                     <button id="btnIniciar">Iniciar</button>
                     <button id="btnPausar">Pausar</button>
                     <button id="btnResetar">Resetar</button>
                 </div>
 
-
             </div>
 
             <div id="configuracoes">
+
                 <div class="config">
                     <label for="tempoFoco">⏱ Tempo de estudo</label>
                     <input type="number" id="tempoFoco" min="1" value="25">
@@ -117,14 +124,13 @@
 
                 <div class="config">
                     <label for="tempoDescanso">☕ Descanso (auto)</label>
-
                     <input type="number" id="tempoDescanso" readonly>
                 </div>
+                
                 <p id="observacao">* O tempo de descanso será calculado automaticamente.</p>
             </div>
         </div>
     </div>
-
     <script src="../js/main.js"></script>
 </body>
 
