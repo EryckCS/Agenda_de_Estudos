@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>AgendaEstudos</title>
 </head>
 
@@ -12,7 +12,7 @@
 
     <div id="nav">
 
-        <img src="../img/agenda_de_estudos.png" alt="logo" width="300" height="100">
+        <img src="./img/agenda_de_estudos.png" alt="logo" width="300" height="100">
 
         <section id="usuario">
             <h3 id="nomeUsuario">Eryck Kayck</h3>
@@ -105,12 +105,14 @@
             <div id="cronometro">
 
                 <h2>CRONÔMETRO POMODORO</h2>
-                <span id="tempo">25:00</span>
+                <span id="hora">00</span>
+                <span id="minuto">00</span>
+                <span id="segundo">00</span>
 
                 <div id="botoes">
-                    <button id="btnIniciar">Iniciar</button>
-                    <button id="btnPausar">Pausar</button>
-                    <button id="btnResetar">Resetar</button>
+                    <button type="button" id="btnIniciar">Iniciar</button>
+                    <button type="button" id="btnPausar">Pausar</button>
+                    <button type="button" id="btnResetar">Resetar</button>
                 </div>
 
             </div>
@@ -126,12 +128,17 @@
                     <label for="tempoDescanso">☕ Descanso (auto)</label>
                     <input type="number" id="tempoDescanso" readonly>
                 </div>
-                
+
                 <p id="observacao">* O tempo de descanso será calculado automaticamente.</p>
             </div>
         </div>
     </div>
-    <script src="../js/main.js"></script>
+    <script src="./js/atividades.js"></script>
+    <script src="./js/cronometro.js"></script>
+    <script src="./js/calendario.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
+
+
