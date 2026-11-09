@@ -8,9 +8,6 @@ function inicializarCronometro() {
     const visorHora = document.getElementById("hora");
     const visorMinuto = document.getElementById("minuto");
     const visorSegundo = document.getElementById("segundo");
-    const escolhaHora = document.getElementById("tempoHora");
-    const escolhaMinuto = document.getElementById("tempoMinuto");
-    const escolhaSegundo = document.getElementById("tempoSegundo");
     
     document.getElementById("btnIniciar").addEventListener("click", iniciar);
     document.getElementById("btnPausar").addEventListener("click", pausar);

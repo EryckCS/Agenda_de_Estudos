@@ -6,10 +6,6 @@ body {
     margin: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 #nav {
     width: 95%;
     max-width: 1400px;
@@ -51,19 +47,48 @@ body {
 }
 
 /* Calendário */
-#dias_semana {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 4px;
-    width: 100%;
-    margin-top: 20px;
-    font-size: large;
+#mes_calendario {
+    margin: 16px 0;
+    font-size: 20px;
+    text-transform: capitalize;
 }
 
 #voltar,
 #proximo {
+    padding: 8px;
+    border: 0;
     background-color: #5c606b;
     color: aliceblue;
+    cursor: pointer;
+}
+
+#dias_semana,
+#dias {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#dias_semana {
+    margin: 18px 0 8px;
+}
+
+#dias_semana div,
+#dias .dia-calendario,
+#dias .dia-vazio {
+    display: flex;
+    width: 14.28%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dia-calendario.dia-hoje {
+    border: 1px solid #93c5fd;
+}
+
+.dia-calendario.dia-com-atividade {
+    background-color: #fbbf24;
+    color: #0f172a;
 }
 
 /* Pomodoro */
@@ -211,39 +236,3 @@ body {
     }
 }
 
-/* Celular */
-@media (max-width: 600px) {
-    #nav {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    #usuario {
-        text-align: left;
-    }
-
-    #calendario,
-    #atividades-dia,
-    #pomodoro {
-        min-height: 0;
-        padding: 16px;
-    }
-
-    .campos-atividade {
-        grid-template-columns: 1fr;
-    }
-
-    #tempo {
-        font-size: 52px;
-    }
-
-    #escolhaNumero {
-        align-items: stretch;
-        flex-direction: column;
-    }
-
-    #escolhaNumero input,
-    #escolhaNumero button {
-        width: 100%;
-    }
-}

@@ -35,6 +35,7 @@ function inicializarAtividades() {
 
         const atividade = document.createElement("article");
         atividade.classList.add("atividade");
+        atividade.dataset.data = dataInput.value;
 
         const titulo = document.createElement("h3");
         titulo.textContent = tituloInput.value;
@@ -50,10 +51,12 @@ function inicializarAtividades() {
         botaoConcluir.textContent = "Atividade Concluída";
         botaoConcluir.addEventListener("click", function () {
             atividade.remove();
+            document.dispatchEvent(new Event("atividadesAtualizadas"));
         });
 
         atividade.append(titulo, descricao, prazo, botaoConcluir);
         listaAtividades.appendChild(atividade);
+        document.dispatchEvent(new Event("atividadesAtualizadas"));
 
         formularioAtividade.reset();
         formularioAtividade.hidden = true;
