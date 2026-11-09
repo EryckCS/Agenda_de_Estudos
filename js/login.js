@@ -6,8 +6,14 @@ function Logar_Cadastrar () {
 
 
     botaoLogin.addEventListener("click", function () {
+        formularioCadastrar.hidden = true;
         formularioLogin.hidden = false;
     });
-}
 
+    botaoCadastro.addEventListener("click", function () {
+        formularioLogin.hidden = true;
+        formularioCadastrar.hidden = false;
+    });
+
+}
 Logar_Cadastrar();
