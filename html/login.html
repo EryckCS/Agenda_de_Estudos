@@ -12,13 +12,14 @@
 
     <div id="main">
         <img src="../img/agenda_de_estudos.png" alt="Logo" height="130" width="330" >
+        <p id="textAviso">Aperte na aba doque você deseja realizar</p>
         <br>
         <button id="btnLogin">Login</button>
         <button id="btnCadastro">Cadastrar</button>
         <hr>
 
         <div id="caixa-login">
-            <form id="login" class="ativo" autocomplete="on">
+            <form id="login" autocomplete="on" hidden>
                 <label style="color:aliceblue" for="email">Email:</label>
                 <input type="email" id="email" name="email">
                 <br><br><br>
@@ -30,7 +31,7 @@
         </div>
 
         <div id="caixa-cadastro">
-            <form id="login" class="inativo">
+            <form id="cadastro" hidden>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email">
                 <label for="pass">Senha:</label>
@@ -40,6 +41,7 @@
         </div>
     </div>
 
+    <script src="../js/login.js"></script>
 </body>
 
 </html>
