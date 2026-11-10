@@ -1,46 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgendaDeEstudos</title>
+    <title>Agenda de Estudos</title>
     <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
-
     <div id="main">
-        <img src="../img/agenda_de_estudos.png" alt="Logo" height="130" width="330" >
-        <p id="textAviso">Aperte na aba doque você deseja realizar</p>
-        <br>
-        <button id="btnLogin">Login</button>
-        <button id="btnCadastro">Cadastrar</button>
+        <img src="../img/agenda_de_estudos.png" alt="Logo da Agenda de Estudos" height="130" width="330">
+        <p id="textAviso">Escolha o que deseja fazer</p>
+
+        <button id="btnLogin" type="button">Login</button>
+        <button id="btnCadastro" type="button">Cadastrar</button>
         <hr>
 
         <div id="caixa-login">
             <form id="login" autocomplete="on" hidden>
                 <h3>Login</h3>
-                <label style="color:aliceblue" for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <br><br><br>
-                <label style="color:aliceblue" for="pass">Senha:</label>
-                <input type="pass" id="pass" name="password">
-                <br><br>
+
+                <div class="campo-login">
+                    <label for="emailLogin">E-mail:</label>
+                    <input type="email" id="emailLogin" name="email" required>
+                </div>
+
+                <div class="campo-login">
+                    <label for="senhaLogin">Senha:</label>
+                    <input type="password" id="senhaLogin" name="password" required>
+                </div>
+
                 <input id="btnEntrar" type="submit" value="Entrar">
             </form>
         </div>
 
         <div id="caixa-cadastro">
             <form id="cadastro" hidden>
-                <h3>Cadastrar</h3>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <br><br><br>
-                <label for="pass">Senha:</label>
-                <input type="password" id="pass" name="password">
-                <br><br>
-                <input id="btnCadastrar" type="submit" value="Cadastrar">
+                <h3>Cadastro</h3>
+
+                <div class="campo-login">
+                    <label for="nomeCadastro">Nome:</label>
+                    <input type="text" id="nomeCadastro" name="name" required>
+                </div>
+
+                <div class="campo-login">
+                    <label for="emailCadastro">E-mail:</label>
+                    <input type="email" id="emailCadastro" name="email" required>
+                </div>
+
+                <div class="campo-login">
+                    <label for="senhaCadastro">Senha:</label>
+                    <input type="password" id="senhaCadastro" name="password" required>
+                </div>
+
+                <input id="btnSalvarCadastro" type="submit" value="Cadastrar">
             </form>
         </div>
     </div>
