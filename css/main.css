@@ -75,6 +75,7 @@ body {
 #dias_semana div,
 #dias .dia-calendario,
 #dias .dia-vazio {
+    box-sizing: border-box;
     display: flex;
     width: 14.28%;
     height: 40px;
@@ -235,4 +236,3 @@ body {
         gap: 30px;
     }
 }
-

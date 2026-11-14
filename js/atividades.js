@@ -62,5 +62,4 @@ function inicializarAtividades() {
         formularioAtividade.hidden = true;
     });
 
-    // TODO: carregar e salvar as atividades no armazenamento local.
 }

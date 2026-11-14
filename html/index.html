@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eryck Kayck">
+    <meta name="description" content="Agenda de Estudos: projeto acadêmico de Ciência da Computação para organização de atividades e estudos com cronômetro Pomodoro.">
+    <meta name="keywords" content="Agenda de Estudos, Eryck Kayck, Ciência da Computação, atividades, calendário, Pomodoro">
     <link rel="stylesheet" href="../css/main.css">
     <title>AgendaEstudos</title>
 </head>
@@ -105,6 +108,7 @@
             <form id="cronometro">
 
                 <h2>CRONÔMETRO POMODORO</h2>
+                <p id="statusCronometro" aria-live="polite">Tempo de estudo</p>
                 <div id="tempo">
                     <span id="hora">00</span>
                     <span id="minuto">00</span>
@@ -136,12 +140,12 @@
                 </div>
 
                 <div id="areaDescanso">
-                    <h3>☕ Descanso: </h3>
+                    <h3>☕ Descanso (20%): </h3>
                     <span id="tempoDescanso"></span>
 
                 </div>
 
-                <p id="observacao">* O tempo de descanso será calculado automaticamente.</p>
+                <p id="observacao">* O descanso equivale a 20% do estudo e começa automaticamente quando o cronômetro zerar.</p>
             </div>
         </div>
     </div>
@@ -152,6 +156,3 @@
 </body>
 
 </html>
-
-
-
