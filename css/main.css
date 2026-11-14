@@ -23,7 +23,6 @@ body {
 }
 
 #usuario {
-    color: antiquewhite;
     text-align: right;
 }
 
@@ -126,9 +125,6 @@ body {
     gap: 10px;
 }
 
-#botoes {
-    margin: 0;
-}
 
 #configuracoes {
     max-width: 500px;
